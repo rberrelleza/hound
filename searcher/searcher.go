@@ -321,7 +321,7 @@ func updateAndReindex(
 		return rev, false
 	}
 
-	log.Printf("Rebuilding %s for %s", name, newRev)
+	log.Printf("Rebuilding %s for %s [%s]", name, newRev, vcsDir)
 	idx, err := buildAndOpenIndex(
 		opt,
 		dbpath,
